@@ -7,8 +7,6 @@ const GoalInput = props => {
   const [isAddMode, setIsAddMode] = useState(false);
 
   const goalInputHandler = enteredText => {
-    console.log("Here: ",enteredText.length,isAddMode,clearButtonShow);
-
     setClearButtonShow(enteredText.length>0 ? true:false);  
     setIsAddMode(enteredText.length>0 ? true:false);
     setEnteredGoal(enteredText);
